@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @smwalsh7502
-- 👀 I’m interested in cycling, golfing, and msuic
+- 👀 I’m interested in cycling, golfing, and music
 - 🌱 I’m currently learning how to code with Python
 
 <!---
