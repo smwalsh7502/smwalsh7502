@@ -1,0 +1,60 @@
+#Samantha Walsh
+#This program is a recreation of The Oregon Trail game
+#developed by Bill Heinemann, Don Rawitsch, and Paul Dillenberger
+#https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)
+#https://classicreload.com/oregon-trail.html
+#https://www.w3schools.com/python/python_conditions.asp (For If statements)
+#https://www.w3schools.com/python/python_booleans.asp (For booleans)
+#https://www.w3schools.com/python/python_functions.asp (For defining my own functions)
+import time
+
+print("\n------------------Welcome to The Oregon Trail!-------------------\n")
+
+#The user will first decide their career
+print("""Many kinds of people made the trip to Oregon.
+    You may:
+        1. Be a banker from Boston
+        2. Be a carpenter from Ohio
+        3. Be a farmer from Illinois
+        4. Find out the differences between these choices""")
+career=int(input("What is your choice?"))
+
+#The user's career choice will affect their funds, supplies, and ability to survive
+#funds=bool()
+#if career==1
+#   funds=
+
+#Then the user will input their names and the names of their party members
+user_name=input("What is the first name of the wagon leader?")
+family2=input("What are the first names of the other members in your party?")
+family3=input()
+family4=input()
+family5=input()
+print ("1. " + user_name)
+print ("2. " + family2)
+print ("3. " + family3)
+print ("4. " + family4)
+print ("5. " + family5)
+correct_names=str(input("Are these names correct? Type Y or N."))
+correct="Y"or"y"
+incorrect="N"or"n"
+
+#I might use a loop in here later? I decided to make my own function so that I can repeat it
+def check_names:
+    if correct_names==incorrect:
+        wrong_names=int(input("Which name would you like to change? Type 1,2,3,4, or 5."))
+        if wrong_names==1:
+            user_name=input("What is the first name of the wagon leader?")
+        elif wrong_names==2:
+            family2=input()
+        elif wrong_names==3:
+            family3=input()
+        elif wrong_names==4:
+            family4=input()
+        elif wrong_names==5:
+            family5=input()
+        else:
+            print("Please type 1,2,3,4 or 5")
+            check_names()
+    if correct_names==correct:
+        print("Great! We are ready to start.")
