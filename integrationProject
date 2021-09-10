@@ -39,7 +39,7 @@ correct="Y"or"y"
 incorrect="N"or"n"
 
 #I might use a loop in here later? I decided to make my own function so that I can repeat it
-def check_names:
+def check_names():
     if correct_names==incorrect:
         wrong_names=int(input("Which name would you like to change? Type 1,2,3,4, or 5."))
         if wrong_names==1:
