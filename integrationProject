@@ -57,3 +57,4 @@ def check_names():
             check_names()
     if correct_names==correct:
         print("Great! We are ready to start.")
+check_names()
