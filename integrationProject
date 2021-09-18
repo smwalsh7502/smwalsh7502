@@ -1,60 +1,202 @@
-#Samantha Walsh
-#This program is a recreation of The Oregon Trail game developed by Bill Heinemann, Don Rawitsch, and Paul Dillenberger
-#https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)
-#https://classicreload.com/oregon-trail.html
-#https://www.w3schools.com/python/python_conditions.asp (For If statements)
-#https://www.w3schools.com/python/python_booleans.asp (For booleans)
-#https://www.w3schools.com/python/python_functions.asp (For defining my own functions)
+# Samantha Walsh
+# 9/10/2021
+
+# Description:
+# This program is a recreation of The Oregon Trail game developed by
+# Bill Heinemann, Don Rawitsch, and Paul Dillenberger
+
+# Sources:
+# 1  (The history of the Oregon Trail game)..https://en.wikipedia.org/wiki/The_Oregon_Trail_(series)
+# 2  (Play the Original game online!)........https://classicreload.com/oregon-trail.html
+# 3  (If statements).........................https://www.w3schools.com/python/python_conditions.asp
+# 4  (Booleans)..............................https://www.w3schools.com/python/python_booleans.asp
+# 5  (Defining my own functions).............https://www.w3schools.com/python/python_functions.asp
+# 6  (Time module)...........................https://www.programiz.com/python-programming/time
+# 7  (Assignment Operators)..................https://www.w3schools.com/python/python_operators.asp
+# 8  (Global Variables)......................https://www.w3schools.com/python/python_variables_global.asp
+# 9  (While loops)...........................https://www.w3schools.com/python/python_while_loops.asp
+# 10 (More While loops)......................https://wiki.python.org/moin/WhileLoop
+# 11 (Built in exceptions)...................https://www.w3schools.com/python/python_ref_exceptions.asp
+# 12 (Lists/List Comprehension)..............https://www.w3schools.com/python/python_lists_comprehension.asp
+
+# I will refer to these sources by number throughout the program
+
 import time
 
-print("\n------------------Welcome to The Oregon Trail!-------------------\n")
+__author__ = "Samantha Walsh"
 
-#The user will first decide their career
-print("""Many kinds of people made the trip to Oregon.
-    You may:
-        1. Be a banker from Boston
-        2. Be a carpenter from Ohio
-        3. Be a farmer from Illinois
-        4. Find out the differences between these choices""")
-career=int(input("What is your choice?"))
+# INTRODUCTION
+print("\nHello! My name is Sam!")
+time.sleep(1.8)
+# Time module ---> Source #6
+print("""\nThis is my recreation of the Original Oregon Trail game for my COP 1500 Integration Project. \n
+                           I hope you enjoy playing! :)\n""")
+time.sleep(3)
+print("-" * 150)
+# Using the * String operator ---> I made a line with 150 dashes to separate my Introduction from the game
+# Instead of typing "-" 150 times I told Python to multiply the string "-" by 150
 
-#The user's career choice will affect their funds, supplies, and ability to survive
-#funds=bool()
-#if career==1
-#   funds=
+print("\nWelcome to the Oregon Trail!")
 
-#Then the user will input their names and the names of their party members
-user_name=input("What is the first name of the wagon leader?")
-family2=input("What are the first names of the other members in your party?")
-family3=input()
-family4=input()
-family5=input()
-print ("1. " + user_name)
-print ("2. " + family2)
-print ("3. " + family3)
-print ("4. " + family4)
-print ("5. " + family5)
-correct_names=str(input("Are these names correct? Type Y or N."))
-correct="Y"or"y"
-incorrect="N"or"n"
+# The user will first decide their career
+print("""\nMany kinds of people made the trip to Oregon.
+        You may:
+            1. Be a banker from Boston
+            2. Be a carpenter from Ohio
+            3. Be a farmer from Illinois
+            4. Find out the differences between these choices\n""")
 
-#I might use a loop in here later? I decided to make my own function so that I can repeat it
-def check_names():
-    if correct_names==incorrect:
-        wrong_names=int(input("Which name would you like to change? Type 1,2,3,4, or 5."))
-        if wrong_names==1:
-            user_name=input("What is the first name of the wagon leader?")
-        elif wrong_names==2:
-            family2=input()
-        elif wrong_names==3:
-            family3=input()
-        elif wrong_names==4:
-            family4=input()
-        elif wrong_names==5:
-            family5=input()
+
+# The user's career choice will affect their funds, supplies, and ability to survive
+
+# Defining my own function ---> Source #5
+def career_choice():
+    global career, funds, points
+# Global Variables ---> Source #8... I didn't know these existed! Very Helpful when defining variables outside functions
+    while True:  # While loops ---> Sources #9 and #10; I had a lot of trouble looping this function
+        try:
+            career = int(input("What is your choice? Type 1,2,3, or 4. \n"))
+            funds = 1600.00  # Defining/Assigning variables for the career_choice() function
+            points = 1
+            # At the beginning of the loop, ask the user what their career choice is
+            if career == 4:
+                print("""    Traveling to Oregon isn't easy! But if you're a banker, you'll have 
+    more money for supplies and services than a carpenter or a farmer.
+
+    However, the harder you have to try, the more points you deserve!
+    Therefore, the farmer earns the greatest number of points and the
+    banker earns the least.\n""")
+                continue
+                # If they asked about the career choices (Option 4) loop back to asking what their choice is
+        except ValueError:  # Built in exception ---> Source # 11
+            print("Sorry, I didn't understand that. Please type 1,2,3, or 4. ")
+            continue
+            # If the user entered an invalid value for career, the loop continues and
+            # informs the user what a proper input is
         else:
-            print("Please type 1,2,3,4 or 5")
-            check_names()
-    if correct_names==correct:
-        print("Great! We are ready to start.")
+            break
+            # If the user enters a valid value, the loop breaks and continues to the if statements
+    if career == 1:  # Funds = $1600.00; (Pass Function/If statements ---> Source #3)
+        pass  # Points = 1
+    elif career == 2:
+        funds -= 800.00  # Funds = $800.00    (Assignment Operators ---> Source #7)
+        points += 1  # Points = 2
+    elif career == 3:
+        funds -= 1200.00  # Funds = $400.00
+        points += 2  # Points = 3
+career_choice()
+
+# For checking if user's input is correct/incorrect
+# I tried to use "Or" within this variable but Python did not recognize lowercase "y"
+# Upon research, I found that I could make a list and have Python check to see if another variable is "in" this list
+correct = ["Y", "y"]  # Lists ---> Source #12
+incorrect = ["N", "n"]
+
+
+# Checking if user's career choice was what they wanted
+# noinspection PyGlobalUndefined
+def check_career_choice():
+    global correct_career, correct, incorrect, points
+    while True:
+        try:
+            correct_career = str(input("You chose career number " + str(points) + ". Is that correct? Type Y or N. \n"))
+            if correct_career in correct:  # List Comprehension ---> Source #12
+                print("Great! Next, we need the names of everyone in your party.")
+                time.sleep(1)
+                break
+            elif correct_career in incorrect:
+                print("Which career would you like instead? ")
+                career_choice()
+                check_career_choice()
+            else:
+                print("Sorry, I didn't understand that. Please type Y or N.")
+                check_career_choice()
+        finally:
+            break
+
+
+check_career_choice()
+
+# Then the user will input their names and the names of their party members
+user_name = str(input("What is the first name of the wagon leader? "))
+family2 = str(input("What are the first names of the other members in your party? "))
+family3 = str(input("Next? "))
+family4 = str(input("Then? "))
+family5 = str(input("Last one. "))
+
+
+# Function that prints out all the family names --> used in check_names() function
+def family_names():
+    # Global comes in handy, don't know if I need it but junk in case
+    global user_name, family2, family3, family4, family5
+    print("\nOk. Here is your party: ")
+    print("1. " + user_name)  # String operator +
+    print("2. " + family2)
+    print("3. " + family3)
+    print("4. " + family4)
+    print("5. " + family5)
+
+
+family_names()
+
+
+# Checking if the user's name inputs are correct and allowing the user to change any names
+# I think there may be a better way to optimize this function but I will discuss with an SA or Prof. Vanselow later
+def check_names():
+    global correct_names, user_name, family2, family3, family4, family5
+    while True:
+        try:
+            correct_names = str(input("\nAre these names correct? Type Y or N. "))
+            if correct_names in incorrect:  # Glad I can use the incorrect variable I made earlier
+                try:
+                    wrong_names = int(input("Which name would you like to change? Type 1,2,3,4, or 5."))
+                    if wrong_names == 1:
+                        user_name = str(input("What is the first name of the wagon leader? "))
+                        family_names()
+                        continue
+                    elif wrong_names == 2:
+                        family2 = input("What is the new first name? ")
+                        family_names()
+                        continue
+                    elif wrong_names == 3:
+                        family3 = input("What is the new first name? ")
+                        family_names()
+                        continue
+                    elif wrong_names == 4:
+                        family4 = input("What is the new first name? ")
+                        family_names()
+                        continue
+                    elif wrong_names == 5:
+                        family5 = input("What is the new first name? ")
+                        family_names()
+                        continue
+                except ValueError:
+                    print("Sorry, I didn't understand that. Please type 1,2,3,4 or 5.")
+                    check_names()
+            elif correct_names in correct:
+                print("Great! We are ready to start.\n")
+                time.sleep(1)
+                break
+        except ValueError:
+            print("Sorry, I didn't understand that. Please type Y or N.")
+            continue
+        else:
+            break
+
+
 check_names()
+
+# Whew! That took a lot of debugging and brain power but it works!
+
+# TIME TO START THE GAME!
+
+print("""  It is 1848. Your jumping off place for Oregon is Independence, Missouri.
+   You must decide which month to leave Independence.""")
+time.sleep(1)
+print(" 1. March", "2. April", "3. May", "4. June", "5. July", "6. Ask for advice", sep = "\n    ")
+time.sleep(1)
+
+# I will eventually create a function where the user's month choice determines their likelyhood of survival of the weather
+
+print("    Before leaving Independence you should buy equipment and supplies.")
+print("    You have $%.2f in cash but you don't have to spend it all now."%(funds))
