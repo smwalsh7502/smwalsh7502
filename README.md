@@ -1,6 +1,6 @@
-### Hey there, I'm Sam!👋
+## Hey there, I'm Sam!👋
 
-## I'm a Junior Software Engineering student at Florida Gulf Coast University.
+### I'm a Junior Software Engineering student at Florida Gulf Coast University.
 
 <!--
 - 🌱 I’m currently learning JavaScript and SQL
