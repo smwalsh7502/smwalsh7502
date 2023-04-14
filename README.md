@@ -13,6 +13,6 @@ Checkout my projects:
 Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/files/10099296/Sam_Walsh_Resume.pdf)
 
 
-Connect with me on my [linkedin](www.linkedin.com/in/sam-mwalsh)
+Connect with me on my [linkedin](https://www.linkedin.com/in/sam-mwalsh/))
 
 Thanks for visiting!
