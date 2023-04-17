@@ -10,7 +10,7 @@ Checkout my projects:
 - [The Oregon Trail Game](https://github.com/smwalsh7502/The-Oregon-Trail-Game)
 - [Soldier Game](https://github.com/smwalsh7502/Soldier-Game)
 
-Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/files/10099296/Sam_Walsh_Resume.pdf)
+Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/blob/main/Sam_Walsh_Engineer_Resume.pdf)
 
 
 Connect with me on my [linkedin](https://www.linkedin.com/in/sam-mwalsh/)
