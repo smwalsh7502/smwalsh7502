@@ -7,7 +7,7 @@ I'm a Senior Software Engineering student at Florida Gulf Coast University.
 
 Checkout my newest project: [Code Culinary - A Recipe Website](https://github.com/smwalsh7502/Recipe-Database-Website)
 
-![Code_Culinary](https://github.com/smwalsh7502/smwalsh7502/assets/90478060/64ca0adc-f76e-41ed-a2c5-42c3576040b7){width=50%}
+![Code_Culinary](https://github.com/smwalsh7502/smwalsh7502/assets/90478060/64ca0adc-f76e-41ed-a2c5-42c3576040b7){width=10%}
 
 Checkout my current research project: [Machine Learning Red Tide](https://github.com/smwalsh7502/ML_RedTide)
 
