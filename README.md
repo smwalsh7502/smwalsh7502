@@ -6,7 +6,8 @@ I'm a Senior Software Engineering student at Florida Gulf Coast University.
 - ⚡ Fun fact: I have been a musician for over 15 years and can play 6 instruments!
 
 Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/blob/main/Sam_Walsh_Engineer_Resume.pdf)
-<img src="{https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white}" />
+[![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/)
+&nbsp;
 
 Connect with me on my [linkedin](https://www.linkedin.com/in/sam-mwalsh/)
 
