@@ -7,11 +7,8 @@ I'm a Senior Software Engineering student at Florida Gulf Coast University.
 
 Checkout my newest project: [Code Culinary - A Recipe Website](https://github.com/smwalsh7502/Recipe-Database-Website)
 
-https://github.com/smwalsh7502/smwalsh7502/assets/90478060/15eddd2f-07e0-49fa-96a9-a888dedbc88a
+<img width="430" src=https://github.com/smwalsh7502/smwalsh7502/assets/90478060/15eddd2f-07e0-49fa-96a9-a888dedbc88a>
 
-<video width="320" height="240" controls>
-  <source src="[path/to/your/video.mp4](https://github.com/smwalsh7502/smwalsh7502/assets/90478060/15eddd2f-07e0-49fa-96a9-a888dedbc88a)" type="video/mp4">
-</video>
 
 Checkout my current research project: [Machine Learning Red Tide](https://github.com/smwalsh7502/ML_RedTide)
 
