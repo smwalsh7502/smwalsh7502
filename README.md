@@ -1,6 +1,5 @@
 ## Hey there, I'm Sam!👋
-[![Linkedin](https://i.stack.imgur.com/gVE0j.png)](https://www.linkedin.com/in/sam-mwalsh/) Connect with me on LinkedIn
-
+[Connect with me on LinkedIn](https://www.linkedin.com/in/sam-mwalsh/)
 
 Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/blob/main/Sam_Walsh_Engineer_Resume.pdf)
 
