@@ -3,7 +3,7 @@
 
 Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/blob/main/Sam_Walsh_Engineer_Resume.pdf)
 
-I'm a Senior Software Engineering student at Florida Gulf Coast University.
+I'm a Data Analyst Engineer persuing my Masters of Data Science at UPenn.
 
 - 💬 Ask me about my experiences as an EMT and how they changed my life
 - ⚡ Fun fact: I have been a musician for over 15 years and can play 6 instruments!
