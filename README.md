@@ -1,7 +1,7 @@
 ## Hey there, I'm Sam!👋
 [Connect with me on LinkedIn](https://www.linkedin.com/in/sam-mwalsh/)
 
-Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/blob/main/Sam_Walsh_Engineer_Resume.pdf)
+Here is my current [Resume](https://github.com/smwalsh7502/smwalsh7502/blob/main/Samantha_Walsh_Resume_2026.docx.pdf)
 
 I'm a Data Analyst Engineer persuing my Masters of Data Science at UPenn.
 
