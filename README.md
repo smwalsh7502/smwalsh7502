@@ -10,10 +10,10 @@ I'm a Data Analyst Engineer persuing my Masters of Data Science at UPenn.
 
 
 
-Checkout my newest full stack website project: [Code Culinary](https://github.com/smwalsh7502/Recipe-Database-Website)
+Checkout my full stack website project from undergrad: [Code Culinary](https://github.com/smwalsh7502/Recipe-Database-Website)
 
 ![Code_Culinary](https://github.com/smwalsh7502/smwalsh7502/assets/90478060/64ca0adc-f76e-41ed-a2c5-42c3576040b7)
 
-Checkout my current research project: [Machine Learning Red Tide](https://github.com/smwalsh7502/ML_RedTide)
+Checkout my research project from undergrad: [Machine Learning Red Tide](https://github.com/smwalsh7502/ML_RedTide)
 
 Thanks for visiting!
